@@ -4,6 +4,8 @@ import GradientButton from 'components/GradientButton';
 import LayoutContent from 'components/LayoutContent';
 import FeatureTopicsWithImage from 'components/FeatureSection/TopicsWithImage';
 import FeatureTripleCards from 'components/FeatureSection/TripleCards';
+import FeatureTopicGrid from 'components/FeatureSection/TopicGrid';
+import FeatureTopicsWithFourImages from 'components/FeatureSection/TopicsWithFourImages';
 
 export default function Home() {
   return (
@@ -55,6 +57,7 @@ export default function Home() {
           ]}
         />
         {/* Triple Cards */}
+        {/* Corrigir espaçamento vertical, definindo um espaçamento no container e só adicionar padding no do meio */}
         <FeatureTripleCards
           cardData={[
             {
@@ -75,10 +78,11 @@ export default function Home() {
           ]}
         />
         {/* Topic Grid */}
-        Resumo geral das funcionalidades
-        <br></br>
-        Integrações
-        <br></br>
+        {/* Corrigir espaçamento */}
+        <FeatureTopicGrid />
+        {/* Topics with Four Images */}
+        {/* Corrigir espaçamento */}
+        <FeatureTopicsWithFourImages />
         <div className="text-center my-16">
           <h1 className="mb-4 text-2xl font-normal md:text-3xl lg:text-4xl">
             Os nossos <span className="font-semibold">planos</span> para o teu{' '}
