@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps, router }) {
       {/* MENU NAVEGAÇÃO - PERSISTENTE */}
       <NavigationBar />
       {/* CONTEÚDO GERAL */}
-      <AnimatePresence exitBeforeEnter initial={false}>
+      <AnimatePresence exitBeforeEnter>
         <Layout router={router}>
           <Component {...pageProps} />
         </Layout>

@@ -62,8 +62,8 @@ export default function NavigationBar() {
       }
     >
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <Link href="/" passHref>
-          <div className="flex">
+        <Link href="/" passHref className="cursor-pointer">
+          <div className="flex cursor-pointer">
             <MainLogo />
             <span className="self-center text-lg font-semibold whitespace-nowrap text-white">
               FotoGes
