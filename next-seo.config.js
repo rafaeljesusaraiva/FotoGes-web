@@ -1,6 +1,8 @@
 export default {
   titleTemplate: '%s | FotoGes',
   defaultTitle: 'FotoGes - Plataforma de Fotografia Open-Source',
+  description:
+    'FotoGes - Plataforma de Fotografia Open-Source, desenvolvida por fotógrafos para fotógrafos.',
   //   openGraph: {
   //     type: 'website',
   //     locale: 'en_IE',
