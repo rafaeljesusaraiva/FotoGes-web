@@ -1,7 +1,9 @@
 // import styles from '../styles/Home.module.css'
 import Image from 'next/image';
-import GradientButton from '../components/GradientButton';
-import LayoutContent from '../components/LayoutContent';
+import GradientButton from 'components/GradientButton';
+import LayoutContent from 'components/LayoutContent';
+import FeatureTopicsWithImage from 'components/FeatureSection/TopicsWithImage';
+import FeatureTripleCards from 'components/FeatureSection/TripleCards';
 
 export default function Home() {
   return (
@@ -34,15 +36,44 @@ export default function Home() {
       </div>
       <LayoutContent>
         {/* Topics With Image */}
-        Bloco para mostrar o pacote gratuito
-        <br></br>
+        <FeatureTopicsWithImage
+          coverImage="/example-dashboard.png"
+          title="Experimenta Gratuitamente"
+          topics={[
+            {
+              title: 'Topico 1',
+              description: 'Descrição 1',
+            },
+            {
+              title: 'Topico 2',
+              description: 'Descrição 2',
+            },
+            {
+              title: 'Topico 3',
+              description: 'Descrição 3',
+            },
+          ]}
+        />
         {/* Triple Cards */}
-        Exemplo de funcionalidade (gestão clientes)
-        <br></br>
-        Exemplo de funcionalidade (gestão de pagamentos)
-        <br></br>
-        Exemplo de funcionalidade (gestão de pagamentos)
-        <br></br>
+        <FeatureTripleCards
+          cardData={[
+            {
+              title: 'Gestão de Clientes',
+              description:
+                'Encompassing today’s website design technology to integrated and build solutions relevant to your business.',
+            },
+            {
+              title: 'Pagamentos',
+              description:
+                'Share relevant, engaging, and inspirational brand messages to create a connection with your audience.',
+            },
+            {
+              title: 'Seguimentos',
+              description:
+                'Let us help you level up your search engine game, explore our solutions for digital marketing for your business.',
+            },
+          ]}
+        />
         {/* Topic Grid */}
         Resumo geral das funcionalidades
         <br></br>

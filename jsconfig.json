@@ -1,8 +1,9 @@
+/* eslint-disable */
 {
-    "compilerOptions": {
-      "baseUrl": "./",
-      "paths": {
-        "@components/*": ["src/components/*"],
-      }
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
     }
   }
+}
