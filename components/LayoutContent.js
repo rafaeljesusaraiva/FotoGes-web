@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export default function LayoutContent({ children }) {
   return (
-    <div className="px-4 min-h-screen">
+    <div className="px-4 min-h-screen w-full">
       <div className="container mx-auto">{children}</div>
     </div>
   );
