@@ -5,7 +5,7 @@ function Card({ index, title, description, className }) {
   return (
     <div
       className={
-        'w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 bg-white mt-6 shadow-lg rounded-lg dark:bg-gray-800 ' +
+        'w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 mt-6 shadow-lg rounded-lg bg-color-canvas-dark ' +
         className
       }
     >

@@ -1,6 +1,6 @@
 export default function FeatureTopicGrid() {
   return (
-    <div className="container mx-auto px-6 p-6 bg-white dark:bg-gray-800">
+    <div className="container mx-auto px-6 p-6 bg-color-canvas-dark">
       <div className="mb-16 text-center">
         <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
           Funcionalidades Principais

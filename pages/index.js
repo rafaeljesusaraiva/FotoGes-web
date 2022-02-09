@@ -83,7 +83,7 @@ export default function Home() {
         {/* Topics with Four Images */}
         {/* Corrigir espaçamento */}
         <FeatureTopicsWithFourImages />
-        <div className="text-center my-16">
+        <div className="text-center py-16 bg-color-canvas-dark">
           <h1 className="mb-4 text-2xl font-normal md:text-3xl lg:text-4xl">
             Os nossos <span className="font-semibold">planos</span> para o teu{' '}
             <span className="font-semibold">uso</span>
