@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-canvas: #1F1F1F;
+  --color-canvas-secondary: #353535;
+
+  --color-primary-light: #5BD4EC;
+  --color-primary-dark: #B987F3;
+
+  --color-secondary-light: #EECEA3;
+  --color-secondary-dark: #E8A255;
+
+  --color-text: #FFFFFF;
+  --color-text-primary: var(--color-primary-light);
+
+  --transition-time: 200ms;
+}
+
+@layer utilities {
+  .text-color { 
+    color: var(--color-text);
+
+    &-primary { color: var(--color-text-primary); }
+  }
+
+  .border-color {
+    &-primary-dark, &-primary-light, &-secondary-dark, &-secondary-light { 
+      transition: border-color var(--transition-time) ease;
+    }
+    &-primary-dark { border-color: var(--color-primary-dark); }
+    &-primary-light { border-color: var(--color-primary-light); }
+    &-secondary-dark { border-color: var(--color-secondary-dark); }
+    &-secondary-light { border-color: var(--color-secondary-light); }
+  }   
+
+  .bg-color {
+    &-canvas { background-color: var(--color-canvas); }
+    &-canvas-secondary { background-color: var(--color-canvas-secondary); }
+    &-primary-light { background-color: var(--color-primary-light); }
+    &-primary-dark { background-color: var(--color-primary-dark); }
+    &-secondary-light { background-color: var(--color-secondary-light); }
+    &-secondary-dark { background-color: var(--color-secondary-dark); }
+  }
+  
+  .bg-gradient { 
+    &-primary {
+      background: var(--color-primary-dark);
+      background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary-light) 100%);
+    }
+  
+    &-secondary {
+      transition: linear-gradient var(--transition-time) ease;
+      background: var(--color-secondary-dark);
+      background: linear-gradient(135deg, var(--color-secondary-dark) 0%, var(--color-secondary-light) 100%);
+    
+      &-select {
+        transition: linear-gradient var(--transition-time) ease;
+        background: #cc8b44;
+        background: linear-gradient(135deg, #cc8b44 0%, #c3a986 100%);
+      }
+    }
+  }
+}
+
+html, body {
+  background-color: var(--color-canvas);
+  color: var(--color-text);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+// ::-webkit-scrollbar-track {
+//   background: var(--color-canvas);
+//   border-radius: 0px
+// }
+// ::-webkit-scrollbar-thumb {
+//   background: var(--color-primary-light);
+//   border-radius: 4px
+// }
+
+/*
+ *  CSS RESET
+ *  https://www.joshwcomeau.com/css/custom-css-reset/
+ * 
+ */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
