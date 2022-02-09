@@ -3,8 +3,10 @@ import PricingSection from '../components/PricingSection';
 
 export default function Servicos() {
   return (
-    <div className="pt-10">
-      <PricingSection />
+    <div className="mt-14 w-full">
+      <LayoutContent>
+        <PricingSection />
+      </LayoutContent>
     </div>
   );
 }

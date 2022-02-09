@@ -27,6 +27,7 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
               className="brightness-50"
+              alt="Fundo Principal"
             />
           </div>
         </div>
