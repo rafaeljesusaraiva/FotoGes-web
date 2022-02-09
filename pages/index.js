@@ -33,14 +33,17 @@ export default function Home() {
         </div>
       </div>
       <LayoutContent>
+        {/* Topics With Image */}
         Bloco para mostrar o pacote gratuito
         <br></br>
+        {/* Triple Cards */}
         Exemplo de funcionalidade (gestão clientes)
         <br></br>
         Exemplo de funcionalidade (gestão de pagamentos)
         <br></br>
         Exemplo de funcionalidade (gestão de pagamentos)
         <br></br>
+        {/* Topic Grid */}
         Resumo geral das funcionalidades
         <br></br>
         Integrações

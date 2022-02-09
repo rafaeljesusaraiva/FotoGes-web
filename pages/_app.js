@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config';
 import { AnimatePresence } from 'framer-motion';
-import NavigationBar from '../components/NavigationBar';
-import FooterBar from '../components/FooterBar';
+import NavigationBar from '../components/Navigation/NavBar';
+import FooterBar from '../components/Navigation/Footer';
 import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps, router }) {

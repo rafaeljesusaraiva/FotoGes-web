@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import GradientButton from '../GradientButton';
-import MainLogo from '../MainLogo';
+import GradientButton from 'components/GradientButton';
+import MainLogo from 'components/MainLogo';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import MenuIcon from './MenuIcon';
 import customStyles from './style.module.scss';
 
 import resolveConfig from 'tailwindcss/resolveConfig';
-import tailwindConfig from '../../tailwind.config.js';
+import tailwindConfig from 'tailwind.config.js';
 const fullConfig = resolveConfig(tailwindConfig);
 
 function NavButton({ linkTo, children }) {

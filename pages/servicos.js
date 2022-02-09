@@ -1,5 +1,5 @@
-import LayoutContent from '../components/LayoutContent';
-import PricingSection from '../components/PricingSection';
+import LayoutContent from 'components/LayoutContent';
+import PricingSection from 'components/PricingSection/ThreeBlocks';
 
 export default function Servicos() {
   return (

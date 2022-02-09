@@ -1,4 +1,3 @@
-import './style.module.scss';
 import { useState } from 'react';
 import currencyFormatter from '../../utils/currencyFormatter';
 

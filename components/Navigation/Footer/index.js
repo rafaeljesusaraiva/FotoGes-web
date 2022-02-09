@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import MainLogo from '../MainLogo';
+import MainLogo from '../../MainLogo';
 
 function CollumnLink({ linkTo, children }) {
   return (
