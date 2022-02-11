@@ -100,42 +100,34 @@ export default function FeatureTopicsWithFourImages() {
               </li>
             </ul>
           </div>
-          <div className="mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
-            <div className="relative space-y-4">
+          <div className="mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1 h-full">
+            <div className="relative space-y-4 h-full">
               <div className="flex items-end justify-center lg:justify-start space-x-4">
-                <Image
-                  className="rounded-lg shadow-lg w-32 md:w-56"
+                <img
+                  className="rounded-lg shadow-lg w-32 md:w-56 min-h-min"
                   width="200"
                   src="/example-dashboard.png"
                   alt="1"
-                  layout="fill"
-                  objectFit="cover"
                 />
-                <Image
-                  className="rounded-lg shadow-lg w-40 md:w-64"
+                <img
+                  className="rounded-lg shadow-lg w-40 md:w-64 min-h-min"
                   width="260"
                   src="/example-dashboard.png"
                   alt="2"
-                  layout="fill"
-                  objectFit="cover"
                 />
               </div>
               <div className="flex items-start justify-center lg:justify-start space-x-4 ml-12">
-                <Image
-                  className="rounded-lg shadow-lg w-24 md:w-40"
+                <img
+                  className="rounded-lg shadow-lg w-24 md:w-40 min-h-min"
                   width="170"
                   src="/example-dashboard.png"
                   alt="3"
-                  layout="fill"
-                  objectFit="cover"
                 />
-                <Image
-                  className="rounded-lg shadow-lg w-32 md:w-56"
+                <img
+                  className="rounded-lg shadow-lg w-32 md:w-56 min-h-min"
                   width="200"
                   src="/example-dashboard.png"
                   alt="4"
-                  layout="fill"
-                  objectFit="cover"
                 />
               </div>
             </div>

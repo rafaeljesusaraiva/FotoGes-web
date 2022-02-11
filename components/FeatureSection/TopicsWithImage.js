@@ -57,8 +57,9 @@ export default function FeatureTopicsWithImage({ coverImage, title, topics }) {
         <div className="mt-8 -mr-8 relative lg:mt-0 lg:col-start-1 h-full">
           <Image
             src={coverImage}
-            layout="fill"
-            objectFit="cover"
+            layout="fixed"
+            width="500"
+            height="400"
             alt="illustration"
             className="relative mx-auto shadow-lg rounded max-w-fit"
           />
