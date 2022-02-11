@@ -103,32 +103,44 @@ export default function FeatureTopicsWithFourImages() {
           <div className="mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1 h-full">
             <div className="relative space-y-4 h-full">
               <div className="flex items-end justify-center lg:justify-start space-x-4">
-                <img
-                  className="rounded-lg shadow-lg w-32 md:w-56 min-h-min"
-                  width="200"
-                  src="/example-dashboard.png"
-                  alt="1"
-                />
-                <img
-                  className="rounded-lg shadow-lg w-40 md:w-64 min-h-min"
-                  width="260"
-                  src="/example-dashboard.png"
-                  alt="2"
-                />
+                <div className="rounded-lg shadow-lg w-32 md:w-56 min-h-min">
+                  <Image
+                    layout="responsive"
+                    width="200"
+                    height="170"
+                    src="/example-dashboard.png"
+                    alt="1"
+                  />
+                </div>
+                <div className="rounded-lg shadow-lg w-40 md:w-64 min-h-min">
+                  <Image
+                    layout="responsive"
+                    width="260"
+                    height="170"
+                    src="/example-dashboard.png"
+                    alt="2"
+                  />
+                </div>
               </div>
               <div className="flex items-start justify-center lg:justify-start space-x-4 ml-12">
-                <img
-                  className="rounded-lg shadow-lg w-24 md:w-40 min-h-min"
-                  width="170"
-                  src="/example-dashboard.png"
-                  alt="3"
-                />
-                <img
-                  className="rounded-lg shadow-lg w-32 md:w-56 min-h-min"
-                  width="200"
-                  src="/example-dashboard.png"
-                  alt="4"
-                />
+                <div className="rounded-lg shadow-lg w-24 md:w-40 min-h-min">
+                  <Image
+                    layout="responsive"
+                    width="170"
+                    height="170"
+                    src="/example-dashboard.png"
+                    alt="3"
+                  />
+                </div>
+                <div className="rounded-lg shadow-lg w-32 md:w-56 min-h-min">
+                  <Image
+                    layout="responsive"
+                    width="200"
+                    height="170"
+                    src="/example-dashboard.png"
+                    alt="4"
+                  />
+                </div>
               </div>
             </div>
           </div>
